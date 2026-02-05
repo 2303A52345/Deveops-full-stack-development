@@ -1,0 +1,13 @@
+const os = require('os');
+const path = require('path');
+const fs = require('fs');
+const url = require('url');
+console.log("OS Name:", os.platform());
+console.log("CPU Architecture:", os.arch());
+console.log("File Name:", path.basename(__filename));
+console.log("Directory:", path.dirname(__filename));
+const myUrl = new URL("https://www.google.com/search?q=nodejs");
+console.log("Host:", myUrl.host);
+console.log("Path:", myUrl.pathname);
+fs.writeFileSync("sample.txt", "Built-in module example");
+console.log("File created successfully");

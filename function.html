@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Line by Line Output</title>
+</head>
+<body>
+
+    <h2>JavaScript Line by Line Output</h2>
+
+    <div id="output"></div>
+
+    <script>
+        // 1. Hello World function
+        function hello() {
+            document.getElementById("output").innerHTML += "Hello World<br>";
+        }
+
+        // Call hello() 3 times
+        hello();
+        hello();
+        hello();
+
+        // 2. Module-like functions
+        const math = {
+            add: function(a, b) {
+                return a + b;
+            },
+            multiply: function(a, b) {
+                return a * b;
+            }
+        };
+
+        // Call math functions and show output line by line
+        document.getElementById("output").innerHTML += "Add: " + math.add(10, 5) + "<br>";
+        document.getElementById("output").innerHTML += "Multiply: " + math.multiply(4, 6) + "<br>";
+    </script>
+
+</body>
+</html>
